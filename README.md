@@ -1,9 +1,8 @@
-# TDOSCA
+# TDOSCA Project Scope Statement
 
-* []()
-*
-*
-*
+* [The project context](#PrjContext)
+* [The project target](#PrjTarget)
+* [The general structure of a test case](#TCStructure)
 
 TDOSCA stands for *Test Driven Open Source Compliance Automation*:
 
@@ -31,7 +30,7 @@ Here a short summary of the test cases
 
 Each test case will be offered as a (set of) autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
 
-## The general structure of all test cases: <a id="TCStructure"></a>
+## The general structure of a test case: <a id="TCStructure"></a>
 
 Each test case * shall have the same structure and deliver the same type of data / files:
 
@@ -43,3 +42,14 @@ Each test case * shall have the same structure and deliver the same type of data
   - **does.yaml**: *a list of open / closed tasks to establish the open source compliance*
   - **donts.yaml**: *a list prohibited actions to use the package compliantly*
   - **oscf.md**: *the open source compliance file* [fulfills the compliance requirements if combined with the distributed source- or binary package]
+
+## Licensing Statement
+
+(c) 2020, Karsten Reincke, Deutsche Telekom AG
+
+* The software delivered as content of the test case directory ``input-sources`` are licensed under that licenses the test case uses to challenge the compliance tools. Contributions take place under the same licenses.
+
+* Unless otherwise specified, all other files are distributed under the terms of the [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/).
+  - If you share or adapt (one of) the files add the attribution: "File originates from the TDOSCA project ($REP) initiated by Deutsche Telekom AG"
+  - If you distribute a complete test case add the attribution: "The test case originates from the TDOSCA project ($REP) initiated by Deutsche Telekom AG"
+  - (In both case replace $REP by the name of the respective repository)
