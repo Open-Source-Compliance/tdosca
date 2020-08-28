@@ -21,10 +21,10 @@ IN accordance with the idea of a *test driven development mode* **TDOSCA** wants
 
 Here a short summary of the test cases
 
-| No. | Repository | Label | Language | Approach | Challenge |
+| No. | Repository | Label | Language | Approach | Challenges |
 |-|-|-|-|-|-|
 |01|tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw)| ***Simple*** Hello World Program |bash scripts| one main license (MIT), one file under another (BSD-2-Clause)| see --> |
-|02|[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/)| ***Plain*** Hello World Program |c| Program requiring a preinstalled library (differently licensed), which as 3rd-Party component is stored in the same repository | see --> |
+|02|[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/)| ***Plain*** Hello World Program |c| Program requiring a preinstalled library (differently licensed), which as 3rd-Party component is stored in the same repository | [see -->](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw/blob/master/compliance-traps.md) |
 |03|[tdosca-tc03-complhw](https://github.com/Open-Source-Compliance/)| ***Complex*** Hello World Program |c++| Program requiring preinstalled libraries (differently licensed), which are hosted in external repositories | see --> |
 |04|[tdosca-tc04-sophihw](https://github.com/Open-Source-Compliance/)| ***Sophisticated*** Hello World Program |c, c++, and bash scripts | A very complex mixture of the options mentioned above.| see --> |
 
@@ -47,7 +47,7 @@ Each test case * shall have the same structure and deliver the same type of data
 
 (c) 2020, Karsten Reincke, Deutsche Telekom AG
 
-* The software delivered as content of the test case directory ``input-sources`` are licensed under that licenses the test case uses to challenge the compliance tools. Contributions take place under the same licenses.
+* The software delivered as content of the test case directory ``input-sources`` is licensed under the licenses the test case uses to challenge the compliance tools. Contributions take place under the same licenses.
 
 * Unless otherwise specified, all other files are distributed under the terms of the [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/).
   - If you share or adapt (one of) the files add the attribution: "File originates from the TDOSCA project ($REP) initiated by Deutsche Telekom AG"
