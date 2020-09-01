@@ -42,6 +42,7 @@ Each test case * shall have the same structure and deliver the same type of data
   - **does.yaml**: *a list of open / closed tasks to establish the open source compliance*
   - **donts.yaml**: *a list prohibited actions to use the package compliantly*
   - **oscf.md**: *the open source compliance file* [fulfills the compliance requirements if combined with the distributed source- or binary package]
+  * **prerequisites.csv**: *a list of preinstalled tools and libs, required by the software but not delivered as part of the software package*
 
 ## Licensing Statement
 
