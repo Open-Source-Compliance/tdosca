@@ -23,12 +23,12 @@ Here a short summary of the test cases
 
 | No. | Repository | Label | Language | Approach | Challenges |
 |-|-|-|-|-|-|
-|01|tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw)| ***Simple*** Hello World Program |bash scripts| one main license (MIT), one file under another (BSD-2-Clause)| see --> |
+|01|[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw)| ***Simple*** Hello World Program |bash scripts| one main license (MIT), one file under another (BSD-2-Clause)| see --> |
 |02|[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/)| ***Plain*** Hello World Program |c| Program requiring a preinstalled library (differently licensed), which as 3rd-Party component is stored in the same repository | [see -->](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw/blob/master/compliance-traps.md) |
 |03|[tdosca-tc03-complhw](https://github.com/Open-Source-Compliance/)| ***Complex*** Hello World Program |c++| Program requiring preinstalled libraries (differently licensed), which are hosted in external repositories | see --> |
 |04|[tdosca-tc04-sophihw](https://github.com/Open-Source-Compliance/)| ***Sophisticated*** Hello World Program |c, c++, and bash scripts | A very complex mixture of the options mentioned above.| see --> |
 
-Each test case will be offered as a (set of) autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
+Each test case will be offered as a[n|set of] autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
 
 ## The general structure of a test case: <a id="TCStructure"></a>
 
