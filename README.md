@@ -1,8 +1,10 @@
 # TDOSCA Project Scope Statement
 
 * [The project context](#PrjContext)
+* [Further information concerning the motivation to inaugurate the project](./doc/tdcosca-motivation.pdf)
 * [The project target](#PrjTarget)
 * [The general structure of a test case](#TCStructure)
+
 
 TDOSCA stands for *Test Driven Open Source Compliance Automation*:
 
@@ -11,22 +13,46 @@ We have already a lot of Open Source Compliance tools. The community has spent a
 
 We have two options to develop an adequate and sufficient *Open Source Compliance Tool Chain*: we can develop it *bottom up* or *top down*. In this context 'bottom up' means first to develop solutions for known sub-problems and to postpone their combination in the hope, that we nevertheless will be able to create the required compliance artifacts. 'Top down', on the other hand, means first to define the structure and format of the necessary compliance artifacts and then to develop the tools in accordance to the specifications.  
 
+
 Thus, the 'top down' approach implies a working mode that is at least similar to the well known *test driven development method*:
 
 ## The project target: <a id="PrjTarget"></a>
 
-IN accordance with the idea of a *test driven development mode* **TDOSCA** wants to deliver test cases for such a working mode. They will be offered as repositories by which known and new Open Source Compliance tools can
+In accordance with the idea of a *test driven development mode* **TDOSCA** wants to deliver different test cases for such a working mode. They will be offered as autonomous repositories by which Open Source Compliance tools can
+
 * either prove that they already successfully generate such required artifacts
 * or show which parts of an imaginary compliance chain they successfully process.
 
-Here a short summary of the test cases
+For doing this job successfully, these tools must gather information about the embedded sub components on which the main component depends or they must have access to the information gathered by other tools. For finding such information the gathering tools do not only evaluate the programming language specific 'include' statements of the software itself, but the statements of respective package manager.
 
-| No. | Repository | Label | Language | Approach | Challenges |
-|-|-|-|-|-|-|
-|01|[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw)| ***Simple*** Hello World Program |bash scripts| one main license (MIT), one file under another (BSD-2-Clause)| see --> |
-|02|[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/)| ***Plain*** Hello World Program |c| Program requiring a preinstalled library (differently licensed), which as 3rd-Party component is stored in the same repository | [see -->](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw/blob/master/compliance-traps.md) |
-|03|[tdosca-tc03-complhw](https://github.com/Open-Source-Compliance/)| ***Complex*** Hello World Program |c++| Program requiring preinstalled libraries (differently licensed), which are hosted in external repositories | see --> |
-|04|[tdosca-tc04-sophihw](https://github.com/Open-Source-Compliance/)| ***Sophisticated*** Hello World Program |c, c++, and bash scripts | A very complex mixture of the options mentioned above.| see --> |
+Creating an appropriate set of test cases means to deal with a multi dimensional area established by the dimensions
+
+* *complexity of compliance challenges*
+* *programming language*
+* *type of the dependency / package manager*
+
+Initially, the *TDOSCA* project shall aim to deliver the following objectives:
+
+| Complexity | bash | C/C++ | C/C++ | C/C++ | JAVA | JAVA | PHP | PYTHON | NODE.JS |
+|-|-|-|-|-|-|-|-|-|-|
+| | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
+| simple hello world | [tc-01](#TC01)  |  |  |  |  |  |  |  |
+| plain hello world |  |  |  | [tc-02](#TC02) |  |  |  |  |
+| complex hello world |  |  |  |  |  |  |  |  |
+
+Here a further characterization of some test cases:
+
+* **Implemented Test Cases**:
+
+  - <a id="TC01">[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw) :- two bash scripts, declared license: MIT, one file licensed under the BSD-2-Clause
+
+  - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc01-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
+
+* **Planned Test Cases**:
+
+  - [tdosca-tcXX-complhw](https://github.com/Open-Source-Compliance/) :- A ***complex*** *C++ Hello World Program* that requires preinstalled differently licensed libraries  hosted in external repositories
+
+  - [tdosca-tc04-sophihw](https://github.com/Open-Source-Compliance/) : - A ***sophisticated*** *Hello World Program* based on c, c++, and bash components and a complex mixture of the options mentioned above.
 
 Each test case will be offered as a[n|set of] autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
 
