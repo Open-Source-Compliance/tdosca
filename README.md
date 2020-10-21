@@ -46,7 +46,7 @@ Here a further characterization of some test cases:
 
   - <a id="TC01">[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw) :- two bash scripts, declared license: MIT, one file licensed under the BSD-2-Clause
 
-  - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc01-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
+  - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc02-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
 
 * **Planned Test Cases**:
 
