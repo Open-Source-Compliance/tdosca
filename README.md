@@ -36,7 +36,7 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 | Complexity | bash | C/C++ | C/C++ | C/C++ | JAVA | JAVA | PHP | PYTHON | NODE.JS |
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
-| simple hello world | [tc-01](#TC01)  |  |  |  |  |  |  |  |
+| simple hello world | [tc-01](#TC01)  |[tc-03a](#TC03A)  |  |  |  |  |  |  |
 | plain hello world |  |  |  | [tc-02](#TC02) |  |  |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
@@ -47,6 +47,7 @@ Here a further characterization of some test cases:
   - <a id="TC01">[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw) :- two bash scripts, declared license: MIT, one file licensed under the BSD-2-Clause
 
   - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc01-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
+  - <a id="TC03A">[tdosca-tc03a-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc03a-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
 
 * **Planned Test Cases**:
 
