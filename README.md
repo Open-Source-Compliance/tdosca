@@ -36,8 +36,8 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 | Complexity | bash | C/C++ | C/C++ | C/C++ | JAVA | JAVA | PHP | PYTHON | NODE.JS |
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
-| simple hello world | [tc-01](#TC01)  | [tc-03a](#TC03A) [tc-03b](#TC03b) |  |  |  |  |  |  |
-| plain hello world |  |  |  | [tc-02](#TC02) |  |  |  |  |
+| simple hello world | [tc-01](#TC01)  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) |  |  |  |  |
+| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) |  |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
 Here a further characterization of some test cases:
@@ -49,7 +49,7 @@ Here a further characterization of some test cases:
   - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc01-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
   - <a id="TC03A">[tdosca-tc03a-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc03a-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
   - <a id="TC03b">[tdosca-tc03b-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc03b-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause + gradle wrapper (Apache v2)
-
+- <a id="TC04">[tdosca-tc04-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc04-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
 
 * **Planned Test Cases**:
 
