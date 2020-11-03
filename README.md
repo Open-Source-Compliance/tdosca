@@ -36,7 +36,7 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 | Complexity | bash | C/C++ | C/C++ | C/C++ | JAVA | JAVA | PHP | PYTHON | NODE.JS |
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
-| simple hello world | [tc-01](#TC01)  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) |  |  |  |  |
+| simple hello world | [tc-01](#TC01)  |  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) |  |  |  |
 | plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) |  |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
