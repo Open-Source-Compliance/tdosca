@@ -37,7 +37,7 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
 | simple hello world | [tc-01](#TC01)  |  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) | [tc-05](#TC05)  |  |  |
-| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) |  |  |  |
+| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) | [#tc-06](TC06) |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
 Here a further characterization of some test cases:
@@ -53,12 +53,13 @@ Here a further characterization of some test cases:
 
   - <a id="TC05">[tdosca-tc05-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc05-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
 
+- <a id="TC04">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
 
 * **Planned Test Cases**:
 
   - [tdosca-tcXX-complhw](https://github.com/Open-Source-Compliance/) :- A ***complex*** *C++ Hello World Program* that requires preinstalled differently licensed libraries  hosted in external repositories
 
-  - [tdosca-tc04-sophihw](https://github.com/Open-Source-Compliance/) : - A ***sophisticated*** *Hello World Program* based on c, c++, and bash components and a complex mixture of the options mentioned above.
+  - [tdosca-tcYY-sophihw](https://github.com/Open-Source-Compliance/) : - A ***sophisticated*** *Hello World Program* based on c, c++, and bash components and a complex mixture of the options mentioned above.
 
 Each test case will be offered as a[n|set of] autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
 
@@ -71,10 +72,8 @@ Each test case * shall have the same structure and deliver the same type of data
 * **README.md**: *describes the main idea of the test case*
 * **reference-compliance-artifacts**: *the compliance compliance artifacts (and some of its preliminary products) which are necessary to distribute the program compliantly and which therefore a sufficient tool (chain) must/should generate*
   - **bom.csv**: *a list of all differently licensed open source components of a package*
-  - **does.yaml**: *a list of open / closed tasks to establish the open source compliance*
-  - **donts.yaml**: *a list prohibited actions to use the package compliantly*
   - **oscf.md**: *the open source compliance file* [fulfills the compliance requirements if combined with the distributed source- or binary package]
-  * **prerequisites.csv**: *a list of preinstalled tools and libs, required by the software but not delivered as part of the software package*
+  - **prerequisites.csv**: *a list of preinstalled tools and libs, required by the software but not delivered as part of the software package*
 
 ## Licensing Statement
 
