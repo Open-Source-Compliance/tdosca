@@ -42,18 +42,18 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 
 Here a further characterization of some test cases:
 
-* **Implemented Test Cases**:
+##Implemented Test Cases
 
+* GNU autotools
   - <a id="TC01">[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw) :- two bash scripts, declared license: MIT, one file licensed under the BSD-2-Clause
-
   - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc02-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
+* Gradle
   - <a id="TC03A">[tdosca-tc03a-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc03a-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
   - <a id="TC03b">[tdosca-tc03b-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc03b-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause + gradle wrapper (Apache v2)
 - <a id="TC04">[tdosca-tc04-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc04-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
-
+* Maven
   - <a id="TC05">[tdosca-tc05-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc05-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
-
-- <a id="TC06">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
+  - <a id="TC06">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
 
 * **Planned Test Cases**:
 
