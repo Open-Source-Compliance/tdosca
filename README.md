@@ -37,7 +37,7 @@ Initially, the *TDOSCA* project shall aim to deliver the following objectives:
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
 | simple hello world | [tc-01](#TC01)  |  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) | [tc-05](#TC05)  |  |  |
-| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) | [#tc-06](TC06) |  |  |
+| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) | [tc-06](#TC06) |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
 Here a further characterization of some test cases:
@@ -53,7 +53,7 @@ Here a further characterization of some test cases:
 
   - <a id="TC05">[tdosca-tc05-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc05-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
 
-- <a id="TC04">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
+- <a id="TC06">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
 
 * **Planned Test Cases**:
 
