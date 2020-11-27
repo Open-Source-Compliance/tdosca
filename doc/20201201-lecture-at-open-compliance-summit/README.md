@@ -1,11 +1,15 @@
----
+<!---
 documentclass: extarticle
 fontsize: 12pt
----
+--->
 
 # Test Driven development of FOSS Compliant Artifact Gatherers and Compilers
 
-## 3 Simple Questions
+(c) 2020, Karsten Reincke, Deutsche Telekom AG
+
+>This transcript of our lecture *'Test Driven Open Source Compliance Automation: A New Initiative Hosted at Open Chain'* hold on the [Open Compliance Summit 2020](https://events.linuxfoundation.org/open-compliance-summit/program/schedule/) is distributed under the terms of the CC-BY-4.0 license.
+
+## Three Simple Questions
 
 Without any doubt, there exist already many Open Source compliance tools. The Open-Chain-Reference-Tooling-Work-Group has compiled a list of relevant information:  [http://oss-compliance-tooling.org/Tooling-Landscape/OSS-Based-License-Compliance-Tools/](http://oss-compliance-tooling.org/Tooling-Landscape/OSS-Based-License-Compliance-Tools/). These information can be clustered according to various criteria:
 
