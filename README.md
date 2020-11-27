@@ -9,12 +9,12 @@
 TDOSCA stands for *Test Driven Open Source Compliance Automation*:
 
 ## The project context <a id="PrjContext"></a>
-We have already a lot of Open Source Compliance tools. The community has spent a lot of effort to help us using Open Source software compliantly. Such tools support us, to create the *Open Source Compliance Artifacts* which we have to combine with our software packages for distributing them in accordance to the requirements of the Open Source Licenses. The [Open Source Tooling Workgroup](http://oss-compliance-tooling.org/) of the [Open Chain Project](https://www.openchainproject.org/) offers a [landscape of such tools](http://oss-compliance-tooling.org/Tooling-Landscape/OSS-Based-License-Compliance-Tools/).
+We have already a lot of Open Source Compliance tools. The community has spent a lot of effort to help us using Open Source software compliantly. Such tools support us, to create the *Open Source Compliance Artifacts* which we have to combine with our software packages for distributing them in accordance to the requirements of the Open Source Licenses. The [Open Source Reference Tooling Workgroup](http://oss-compliance-tooling.org/) of the [Open Chain Project](https://www.openchainproject.org/) offers a [landscape of such tools](http://oss-compliance-tooling.org/Tooling-Landscape/OSS-Based-License-Compliance-Tools/).
 
 We have two options to develop an adequate and sufficient *Open Source Compliance Tool Chain*: we can develop it *bottom up* or *top down*. In this context 'bottom up' means first to develop solutions for known sub-problems and to postpone their combination in the hope, that we nevertheless will be able to create the required compliance artifacts. 'Top down', on the other hand, means first to define the structure and format of the necessary compliance artifacts and then to develop the tools in accordance to the specifications.  
 
 
-Thus, the 'top down' approach implies a working mode that is at least similar to the well known *test driven development method*:
+Thus, the 'top down' approach implies a working mode that is at least similar to the well known *test driven development method* (For a more in-depth derivation of the necessity and the scope see [our lecture the Open-Compliance-Summit 2020](./doc/20201201-lecture-at-open-compliance-summit/README.md)):
 
 ## The project target: <a id="PrjTarget"></a>
 
