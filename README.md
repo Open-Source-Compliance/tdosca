@@ -31,19 +31,40 @@ Creating an appropriate set of test cases means to deal with a multi dimensional
 * *programming language*
 * *type of the dependency / package manager*
 
-Initially, the *TDOSCA* project shall aim to deliver the following objectives:
+Currently, the *TDOSCA* delivers the following objectives:
 
 | Complexity | bash | C/C++ | C/C++ | C/C++ | JAVA | JAVA | PHP | PYTHON | NODE.JS |
 |-|-|-|-|-|-|-|-|-|-|
 | | GNU autotools | Gradle | Conan | GNU autotools | Gradle | Maven | Composer | PIP | NPM |
-| simple hello world | [tc-01](#TC01)  |  |  |  | [tc-03a](#TC03A) [tc-03b](#TC03b) | [tc-05](#TC05)  |  |  |
-| plain hello world |  |  |  | [tc-02](#TC02) | [tc-04](#TC04) | [tc-06](#TC06) |  |  |
+| simple hello world | |  |  |  | [tc-10](#TC010) | |  |  |
+| plain hello world |  |  |  | | [tc-11](#TC11) | [tc-12](#TC12) |  |  |
+| plain hello world with traps |  |  |  | | [tc-13](#TC13) | [tc-14](#TC14) |  |  |
 | complex hello world |  |  |  |  |  |  |  |  |
 
 Here a further characterization of some test cases:
 
 ## Implemented Test Cases
 
+### Usable Reference Test Cases
+
+* Gradle
+  - <a id="TC11">[tdosca-tc011-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc011-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution - but with out any license confusion
+  - <a id="TC13">[tdosca-tc13-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc13-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution -. wiht license confusion at the top level
+* Maven
+  - <a id="TC10">[tdosca-tc10-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc10-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
+  - <a id="TC12">[tdosca-tc012-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc012-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution - but with out any license confusion
+  - <a id="TC14">[tdosca-tc14-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc14-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution -. wiht license confusion at the top level
+
+
+### Planned Test Cases
+
+  - [tdosca-tcXX-complhw](https://github.com/Open-Source-Compliance/) :- A ***complex*** *C++ Hello World Program* that requires preinstalled differently licensed libraries  hosted in external repositories
+
+  - [tdosca-tcYY-sophihw](https://github.com/Open-Source-Compliance/) : - A ***sophisticated*** *Hello World Program* based on c, c++, and bash components and a complex mixture of the options mentioned above.
+
+Each test case will be offered as a[n|set of] autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
+
+## Deprecated Test Cases:
 * GNU autotools
   - <a id="TC01">[tdosca-tc01-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc01-simplhw) :- two bash scripts, declared license: MIT, one file licensed under the BSD-2-Clause
   - <a id="TC02">[tdosca-tc02-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc02-plainhw) :-a c program requiring a preinstalled c-library, which is differently licensed and as 3rd-party component integrated into the same repository = delivered together with the main program
@@ -55,13 +76,7 @@ Here a further characterization of some test cases:
   - <a id="TC05">[tdosca-tc05-simplhw](https://github.com/Open-Source-Compliance/tdosca-tc05-simplhw) :- Java Program with 2 Classes: MIT, but one file licensed under the BSD-2-Clause
   - <a id="TC06">[tdosca-tc06-plainhw](https://github.com/Open-Source-Compliance/tdosca-tc06-plainhw) :- Java Program with 3 divergently licensed files: main=MIT, greeter=Apache-v2, tipster=BSD-3CL and 2 foreign subcomponents Log4j and JodaTime which are integrated into the distribution
 
-* **Planned Test Cases**:
 
-  - [tdosca-tcXX-complhw](https://github.com/Open-Source-Compliance/) :- A ***complex*** *C++ Hello World Program* that requires preinstalled differently licensed libraries  hosted in external repositories
-
-  - [tdosca-tcYY-sophihw](https://github.com/Open-Source-Compliance/) : - A ***sophisticated*** *Hello World Program* based on c, c++, and bash components and a complex mixture of the options mentioned above.
-
-Each test case will be offered as a[n|set of] autonomous reposito[ry|ries]. To cluster the *TDOSCA* repositories they all start with the prefix ``tdosca`` followed by the *test case number* and its label.
 
 ## The general structure of a test case: <a id="TCStructure"></a>
 
